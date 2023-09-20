@@ -56,7 +56,7 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Image.asset("images/udsm.png"),
+                // child: Image.asset("images/udsm.png"),
               ),
               const SizedBox(
                 height: 10,
@@ -65,72 +65,72 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                 "Write Technician Details",
                 style: TextStyle(
                   fontSize: 26,
-                  color: Colors.grey,
+                  // color: Colors.grey,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               TextField(
                 controller: carModelTextEditingController,
-                style: const TextStyle(color: Colors.grey),
+                // style: const TextStyle(color: Colors.grey),
                 decoration: const InputDecoration(
                   labelText: "Technical College You Attended",
                   hintText: "",
                   enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    // borderSide: BorderSide(color: Colors.grey),
                   ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
                   hintStyle: TextStyle(
-                    color: Colors.grey,
+                    // color: Colors.grey,
                     fontSize: 10,
                   ),
                   labelStyle: TextStyle(
-                    color: Colors.grey,
+                    // color: Colors.grey,
                     fontSize: 14,
                   ),
                 ),
               ),
               TextField(
                 controller: carNumberTextEditingController,
-                style: const TextStyle(color: Colors.grey),
+                // style: const TextStyle(color: Colors.grey),
                 decoration: const InputDecoration(
                   labelText: "Nida Number",
                   hintText: " ",
                   enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    // borderSide: BorderSide(color: Colors.grey),
                   ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
                   hintStyle: TextStyle(
-                    color: Colors.grey,
+                    // color: Colors.grey,
                     fontSize: 10,
                   ),
                   labelStyle: TextStyle(
-                    color: Colors.grey,
+                    // color: Colors.grey,
                     fontSize: 14,
                   ),
                 ),
               ),
               TextField(
                 controller: carColorTextEditingController,
-                style: const TextStyle(color: Colors.grey),
+                // style: const TextStyle(color: Colors.grey),
                 decoration: const InputDecoration(
                   labelText: "Home Address",
                   hintText: "",
                   enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.grey),
+                    // borderSide: BorderSide(color: Colors.grey),
                   ),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.grey),
                   ),
                   hintStyle: TextStyle(
-                    color: Colors.grey,
+                    // color: Colors.grey,
                     fontSize: 10,
                   ),
                   labelStyle: TextStyle(
-                    color: Colors.grey,
+                    // color: Colors.grey,
                     fontSize: 14,
                   ),
                 ),
@@ -140,12 +140,12 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
               ),
               DropdownButton(
                 iconSize: 26,
-                dropdownColor: Colors.black,
+                // dropdownColor: Colors.black,
                 hint: const Text(
-                  "Please choose your proffesion",
+                  "Please choose your proffession",
                   style: TextStyle(
                     fontSize: 14.0,
-                    color: Colors.grey,
+                    // color: Colors.grey,
                   ),
                 ),
                 value: selectedCarType,
@@ -159,7 +159,7 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                     // ignore: sort_child_properties_last
                     child: Text(
                       car,
-                      style: const TextStyle(color: Colors.grey),
+                      // style: const TextStyle(color: Colors.grey),
                     ),
                     value: car,
                   );
@@ -178,12 +178,12 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.lightGreenAccent,
+                  backgroundColor: Colors.blue,
                 ),
                 child: const Text(
                   "Save Now",
                   style: TextStyle(
-                    color: Colors.black54,
+                    // color: Colors.black54,
                     fontSize: 18,
                   ),
                 ),

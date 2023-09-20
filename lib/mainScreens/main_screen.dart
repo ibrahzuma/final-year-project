@@ -49,8 +49,8 @@ class _MainScreenState extends State<MainScreen>
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.credit_card),
-            label: "Earnings",
+            icon: Icon(Icons.build),
+            label: "Works",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
@@ -61,9 +61,9 @@ class _MainScreenState extends State<MainScreen>
             label: "Account",
           ),
         ],
-        unselectedItemColor: Colors.white54,
-        selectedItemColor: Colors.white,
-        backgroundColor: Colors.black,
+        unselectedItemColor: Colors.black87,
+        selectedItemColor: Colors.blue,
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         selectedLabelStyle: const TextStyle(fontSize: 14),
         showUnselectedLabels: true,

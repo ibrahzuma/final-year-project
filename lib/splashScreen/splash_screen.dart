@@ -45,7 +45,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("images/udsm.png"),
+              Image.asset("images/car_logo.png"),
               const SizedBox(
                 height: 10,
               ),
@@ -53,7 +53,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
                 "Technician App",
                 style: TextStyle(
                     fontSize: 24,
-                    color: Colors.white,
+                    // color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
             ],

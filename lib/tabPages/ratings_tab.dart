@@ -1,3 +1,5 @@
+// @dart=2.12
+
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
@@ -66,17 +68,17 @@ class _RatingsTabPageState extends State<RatingsTabPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
       body: Dialog(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(14),
         ),
-        backgroundColor: Colors.white60,
+        backgroundColor: Colors.white,
         child: Container(
           margin: const EdgeInsets.all(8),
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Colors.white54,
+            color: Colors.white,
             borderRadius: BorderRadius.circular(6),
           ),
           child: Column(
@@ -91,7 +93,7 @@ class _RatingsTabPageState extends State<RatingsTabPage> {
                   fontSize: 22,
                   letterSpacing: 2,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black54,
+                  color: Colors.black87,
                 ),
               ),
               const SizedBox(
@@ -121,7 +123,7 @@ class _RatingsTabPageState extends State<RatingsTabPage> {
                 itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
                 itemBuilder: (context, _) => Icon(
                   Icons.star,
-                  color: Colors.amber,
+                  color: Colors.blue,
                 ),
                 onRatingUpdate: (rating) {
                   // ignore: avoid_print

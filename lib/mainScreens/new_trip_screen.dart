@@ -34,7 +34,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
   );
 
   String? buttonTitle = "Arrived";
-  Color? buttonColor = Colors.green;
+  Color? buttonColor = Colors.blue;
 
   Set<Marker> setOfMarkers = Set<Marker>();
   Set<Circle> setOfCircle = Set<Circle>();
@@ -308,7 +308,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
               });
 
               //black theme google map
-              blackThemeGoogleMap(newTripGoogleMapController);
+              // blackThemeGoogleMap(newTripGoogleMapController);
 
               var driverCurrentLatLng = LatLng(driverCurrentPosition!.latitude,
                   driverCurrentPosition!.longitude);
@@ -330,7 +330,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
             right: 0,
             child: Container(
               decoration: const BoxDecoration(
-                color: Colors.black,
+                color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(18),
                 ),
@@ -354,7 +354,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colors.lightGreenAccent,
+                        color: Colors.blue,
                       ),
                     ),
 
@@ -375,21 +375,22 @@ class _NewTripScreenState extends State<NewTripScreen> {
                     //user name - icon
                     Row(
                       children: [
+                        const Padding(
+                          padding: EdgeInsets.all(10.0),
+                          child: Icon(
+                            Icons.person,
+                            color: Colors.blue,
+                          ),
+                        ),
                         Text(
                           widget.userRideRequestDetails!.userName!,
                           style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.lightGreenAccent,
+                            color: Colors.blue,
                           ),
                         ),
-                        const Padding(
-                          padding: EdgeInsets.all(10.0),
-                          child: Icon(
-                            Icons.phone_android,
-                            color: Colors.grey,
-                          ),
-                        ),
+                        
                       ],
                     ),
 
@@ -413,7 +414,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
                             widget.userRideRequestDetails!.originAddress!,
                             style: const TextStyle(
                               fontSize: 16,
-                              color: Colors.grey,
+                              // color: Colors.grey,
                             ),
                           ),
                         ),
@@ -423,27 +424,27 @@ class _NewTripScreenState extends State<NewTripScreen> {
                     const SizedBox(height: 20.0),
 
                     // user DropOff Address with icon
-                    Row(
-                      children: [
-                        Image.asset(
-                          "images/destination.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        const SizedBox(
-                          width: 14,
-                        ),
-                        Expanded(
-                          child: Text(
-                            widget.userRideRequestDetails!.originAddress!,
-                            style: const TextStyle(
-                              fontSize: 16,
-                              color: Colors.grey,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    // Row(
+                    //   children: [
+                    //     Image.asset(
+                    //       "images/destination.png",
+                    //       width: 30,
+                    //       height: 30,
+                    //     ),
+                    //     const SizedBox(
+                    //       width: 14,
+                    //     ),
+                    //     Expanded(
+                    //       child: Text(
+                    //         widget.userRideRequestDetails!.originAddress!,
+                    //         style: const TextStyle(
+                    //           fontSize: 16,
+                    //           color: Colors.grey,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
 
                     const SizedBox(
                       height: 24,
@@ -473,7 +474,7 @@ class _NewTripScreenState extends State<NewTripScreen> {
 
                           setState(() {
                             buttonTitle = "Start Working"; //start the trip
-                            buttonColor = Colors.lightGreen;
+                            buttonColor = Colors.blue;
                           });
 
                           showDialog(
@@ -584,12 +585,12 @@ class _NewTripScreenState extends State<NewTripScreen> {
     Navigator.pop(context);
 
     //display fare amount in dialog box
-    showDialog(
-      context: context,
-      builder: (BuildContext c) => FareAmountCollectionDialog(
-        totalFareAmount: totalFareAmount,
-      ),
-    );
+    // showDialog(
+    //   context: context,
+    //   builder: (BuildContext c) => FareAmountCollectionDialog(
+    //     totalFareAmount: totalFareAmount,
+    //   ),
+    // );
 
     //save fare amount to driver total earnings
     saveFareAmountToDriverEarnings(totalFareAmount);

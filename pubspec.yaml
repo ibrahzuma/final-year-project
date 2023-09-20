@@ -45,8 +45,8 @@ dependencies:
   google_maps_flutter: ^2.2.5
   http: ^0.13.5
   provider: ^6.0.5
-  smooth_star_rating: ^1.1.1
   star_rating: ^0.11.0
+  smooth_star_rating: 1.0.4+2
 
 dev_dependencies:
 

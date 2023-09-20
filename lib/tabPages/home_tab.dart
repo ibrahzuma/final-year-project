@@ -126,7 +126,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
             newGoogleMapController = controller;
 
             //black theme google map
-            blackThemeGoogleMap(newGoogleMapController);
+            // blackThemeGoogleMap(newGoogleMapController);
 
             locateDriverPosition();
           },
@@ -137,7 +137,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
             ? Container(
                 height: MediaQuery.of(context).size.height,
                 width: double.infinity,
-                color: Colors.black87,
+                color: Colors.white70,
               )
             : Container(),
 
@@ -181,10 +181,10 @@ class _HomeTabPageState extends State<HomeTabPage> {
                   }
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: buttonColor,
-                  padding: const EdgeInsets.symmetric(horizontal: 18),
+                  backgroundColor: Colors.blue,
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(26),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                 ),
                 child: statusText != "Now Online"
@@ -199,7 +199,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
                     : const Icon(
                         Icons.phonelink_ring,
                         color: Colors.white,
-                        size: 26,
+                        size: 40,
                       ),
               ),
             ],
